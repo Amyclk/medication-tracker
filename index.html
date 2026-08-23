@@ -1,32 +1,77 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medication Tracker</title>
+
+    <title>MediDay</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>💊 Medication Tracker</h1>
+    <h1>💊 MediDay</h1>
 
-    <h2>Aujourd'hui</h2>
+    <!-- Choix du mode d'affichage -->
+    <div id="view-selector">
 
-    <p>23 août 2026</p>
+        <button id="yearView">Année</button>
 
-    <p>Prises :</p>
+        <button id="monthView">Mois</button>
 
-    <label>
-        <input type="checkbox">
-        Prise 1
-    </label>
+        <button id="weekView">Semaine</button>
 
-    <br>
+        <button id="dayView">Jour</button>
 
-    <label>
-        <input type="checkbox">
-        Prise 2
-    </label>
+    </div>
+    
+
+    <div id="navigation">
+
+    <button id="previousButton">←</button>
+
+    <span id="currentPeriod"></span>
+
+    <button id="nextButton">→</button>
+
+    </div>
+
+    <!-- Calendrier -->
+    <div id="calendar"></div>
+
+
+    <!-- Fenêtre qui apparaît lorsqu'on clique sur un jour -->
+    <div id="dayModal" class="modal">
+
+        <div class="modal-content">
+
+            <button id="closeModal">✕</button>
+
+            <h2 id="selectedDate"></h2>
+
+            <div class="medication-checks">
+
+                <label>
+                    <input type="checkbox" id="dose1">
+                    💊 Prise 1
+                </label>
+
+                <label>
+                    <input type="checkbox" id="dose2">
+                    💊 Prise 2
+                </label>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
