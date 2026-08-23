@@ -1,0 +1,18 @@
+{
+    "name": "MediDay",
+    "short_name": "MediDay",
+    "description": "Application de suivi des prises de médicaments",
+    "start_url": "./",
+    "display": "standalone",
+    "background_color": "#f8f5f2",
+    "theme_color": "#4169E1",
+    "orientation": "portrait",
+
+    "icons": [
+        {
+            "src": "icon.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
